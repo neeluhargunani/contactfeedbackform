@@ -1,0 +1,84 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+
+<div id="wrapper">
+    <div class="address address-padding-bottom">
+<div class="container">
+      <div class="head_part">
+      <h3 class="heading ">Contact Me</h3>
+          <p class="heading-bottom mb-5">Thankyou For Visiting My Application Please Motivate With Your valuable Feedback...! <br>Your Feedback Is Very Important for my growth and productivity</p>
+
+       </p>
+    </div>
+</div>
+<div class="container">
+    <div class="row address-row">
+
+
+
+      <div class="col-md-12 col-lg-6 col-sm-12 col-xl-6  address-left">
+
+        <div class="address-grid">
+<h4>Application Feedback</h4>
+
+<form action="/success" method="POST" autocomplete="on" class="mt-2 py-3">
+
+       <div class="form-group">
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="fullname" placeholder="Your name.." required>
+
+       </div>
+<div class="form-group">
+        <label for="email">Email Id</label>
+
+        <input type="text" id="email" name="emailid" placeholder="Your email id...."  required>
+</div>
+    <div class="form-group">
+        <label for="subject">Feedback</label>
+        <textarea id="subject" name="message" placeholder="Enter Your Messege...." ></textarea>
+    </div>
+      <input type="submit" value="Submit">
+
+  </form>
+             <div class="message">{{text|safe}}</div>
+</div>
+</div>
+         <div class="col-md-12 col-lg-6 col-sm-12 col-xl-6 address-right ">
+        <div class="address-info">
+          <h4>Address</h4>
+          <p>Neelam Hargunani,
+   Bhagyalaxmi bunglow,3rdfloor
+   Station road,Sector-20,
+   Ulhasnagar-3
+   <br>
+   </p>
+            <hr>
+            <p>
+   Khadakpada,godrej hills
+   kalyan-west -421301
+   <br>
+   </p>
+        </div>
+        <div class="address-info address-mdl " >
+          <h4>Phone </h4>
+          <p>+91 9503836763</p>
+          <p>+91 7400219129</p>
+        </div>
+        <div class="address-info agileits-info wow fadeInRight animated" data-wow-delay=".6s">
+          <h4>Mail</h4>
+          <p><a href="mailto:example@mail.com"> neelamh1000@gmail.com</a></p>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+</div>
+
+
+        </div>
+</div>
+
+{% endblock %}
